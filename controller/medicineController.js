@@ -9,4 +9,20 @@ const GetAllMedicines = asyncHandler(async (req, res) => {
   }
 });
 
-module.exports = { GetAllMedicines };
+
+const GetMedicineById = asyncHandler(async (req, res) => {
+  try {
+    const id = parseInt(req.params.id, 10);
+    if (isNaN(id) || id < 1 || id > medicinesData.length) {
+      return res.status(404).send({ message: "Medicine not found" });
+    }
+
+    const medicine = medicinesData.find(med => med.id === id);
+    return res.status(200).send({ message: "Successfully Fetched Data", response: medicine });
+  } catch (error) {
+    return res.status(500).send({ message: "Error Fetching Data", error: error.message });
+  }
+});
+
+
+module.exports = { GetAllMedicines, GetMedicineById };
