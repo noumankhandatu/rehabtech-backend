@@ -3,12 +3,13 @@ const asyncHandler = require("express-async-handler");
 
 const GetAllMedicines = asyncHandler(async (req, res) => {
   try {
-    return res.status(200).send({ message: "Successfully Fetched Data", response: medicinesData });
+    return res
+      .status(200)
+      .send({ message: "Successfully Fetched Data", response: medicinesData });
   } catch (error) {
     return handleErrorResponse(res, error);
   }
 });
-
 
 const GetMedicineById = asyncHandler(async (req, res) => {
   try {
@@ -17,12 +18,15 @@ const GetMedicineById = asyncHandler(async (req, res) => {
       return res.status(404).send({ message: "Medicine not found" });
     }
 
-    const medicine = medicinesData.find(med => med.id === id);
-    return res.status(200).send({ message: "Successfully Fetched Data", response: medicine });
+    const medicine = medicinesData.find((med) => med.id === id);
+    return res
+      .status(200)
+      .send({ message: "Successfully Fetched Data", response: medicine });
   } catch (error) {
-    return res.status(500).send({ message: "Error Fetching Data", error: error.message });
+    return res
+      .status(500)
+      .send({ message: "Error Fetching Data", error: error.message });
   }
 });
-
 
 module.exports = { GetAllMedicines, GetMedicineById };

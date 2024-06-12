@@ -33,7 +33,8 @@ const medicinesData = [
   {
     id: 4,
     name: "Ascoril LS Syrup",
-    composition: "Ambroxol (30mg/5ml) + Levosalbutamol (1mg/5ml) + Guaifenesin (50mg/5ml)",
+    composition:
+      "Ambroxol (30mg/5ml) + Levosalbutamol (1mg/5ml) + Guaifenesin (50mg/5ml)",
     uses: "Treatment of Cough with mucus",
     sideEffects:
       "Nausea, Vomiting, Diarrhea, Upset stomach, Stomach pain, Allergic reaction, Dizziness, Headache, Rash, Hives, Tremors, Palpitations, Muscle cramp, Increased heart rate",
@@ -205,8 +206,6 @@ const medicinesData = [
   },
 ];
 
-
-
 const exerciseData = [
   {
     id: 1,
@@ -259,7 +258,243 @@ const exerciseData = [
   },
 ];
 
+const exerciseDetailByIdData = [
+  {
+    id: 1,
+    title: "ANKLE & FOOT PAIN EXERCISES",
+    subHeading:
+      "Struggling with an ankle or foot injury, medical condition or nerve pain? Try these gentle stretching and strengthening exercises to help ease the pain.",
+    exercisesDetails: "PHYSIOTHERAPY EXERCISES FOR FOOT AND ANKLE PAIN",
+    description:
+      "Looking for physio-approved gentle exercises to help hurt feet or ankles? Regularly exercising and stretching your feet and ankles can help to build up the surrounding muscles that provide support. Keeping your feet strong will alleviate your soreness, improve flexibility and reduce the likelihood of the pain returning.",
+    image:
+      "https://responsephysio.com/wp-content/uploads/2021/05/ankle-exercises.jpg",
+    data: [
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/standing-calf-stretch.jpg",
+        video: "https://youtu.be/GpWSrv28Hqw",
+        description:
+          "Standing calf stretch - Hold a table or chair for support in a standing position and step the symptomatic leg back behind you. Keep the heels on the floor and toes pointed forwards. Bend the front knee, moving your body forwards until you feel a stretch in the back of your calf. Make sure your heel does not come off the floor and your back knee does not bend.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/balance.jpg",
+        video: "https://youtu.be/y81I6jBEzgc",
+        description:
+          "Single leg balance - Stand on one leg keeping your big toe off the floor and maintaining your arch throughout. Hold this position",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/Metatarsal-doming-image.jpg",
+        video: "https://youtu.be/pfFIxv6g3s0",
+        description:
+          "Metatarsal doming - In sitting with your foot flat on the floor tighten the muscles through the sole of your foot. your arch should raise a little. Ensure you do not curl your toes under. Hold this position.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/Heel-raise.jpg",
+        video: "https://youtu.be/CiCYXkd95qs",
+        description:
+          "Calf raise toes dorsiflexed - Roll up a towel and place it on the floor near a wall. Place your toes on the towel and raise your heels off the ground using the wall for balance. Hold at the top for a moment then slowly lower your heels back down to the ground.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "BACK PAIN EXERCISES",
+    image:
+      "https://responsephysio.com/wp-content/uploads/2021/05/back-exercises.jpg",
+    subHeading:
+      "Struggling with lower back pain due to an injury, medical condition or poor posture? Try these gentle stretching and strengthening exercises to help ease the pain.",
+    exercisesDetails: "PHYSIOTHERAPY EXERCISES FOR LOWER BACK PAIN",
+    description:
+      "Looking for physio-approved gentle exercises to help lower back pain? Back pain treatment is usually most effective when it involves strengthening exercises to strengthen the core, restore mobility in the back and address any underlying imbalances or postural problems.",
+    data: [
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/Book-opening-thoracic-rotation.jpg",
+        video: "https://youtu.be/3iMcRMFZNpo",
+        description:
+          "Lay on your side with your head supported and your arm outstretched in front of you. Lift your top arm up from the floor towards the ceiling and follow the movement with your head and upper body. Continue to move this arm up and over towards the floor. Lift the arm back up and slowly return it out in front of you.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/cat-pose.jpg",
+        video: "https://youtu.be/UhLz5I7vzQ0",
+        description:
+          "Start on your hands and knees. Arch your back up towards the ceiling. Tuck your tailbone down, round your shoulders and drop your head down. Next, reverse the movement. Lift your head up. This your back and push your tailbone up towards the ceiling. Repeat the movement keeping your arms straight throughout",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/pigeon-pose.jpg",
+        video: "https://youtu.be/BZeS-XFAvPs",
+        description:
+          "Start on your hands and knees. Cross symptomatic leg underneath you. Then lower your hips down to the ground. Rest your body forwards on your arms. You should feel a stretch across the buttock.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/bridge-with-roller.jpg",
+        video: "https://youtu.be/hRbo9OPcVdU",
+        description:
+          "Lie on your back with your knees bent and your feet flat on the floor. Take a ball of foam roller and squeeze it between your knees, maintaining the squeeze throughout the movement. lift your hips up keeping them level. Continue to squeeze as you look back to the starting position.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    image:
+      "https://responsephysio.com/wp-content/uploads/2021/06/elbow-1-e1629198166160.jpg",
+    title: "ELBOW PAIN EXERCISES",
 
+    subHeading:
+      "If your elbow pain is due to an injury, surgery, or medical condition, try these gentle stretching and strengthening elbow exercises to help treat your pain.",
+    exercisesDetails: "BEST EXERCISES FOR ELBOW PAIN",
+    description:
+      "Elbow pain caused by conditions such as tennis elbow can be relieved at home, with a combination of rest, ice and specific gentle exercises. You should also stop any repetitive activity causing the issue and rest the arm, so the inflammation can ease.Doing exercises designed for tennis elbow helps strengthen forearm muscles and improve function. These exercises are also good for helping to ease pain from arthritis, golfer’s elbow, carpal tunnel pain, bursitis, trapped nerves, fractures and sprains.",
+    data: [
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/Resisted-supination-image.jpg",
+        video: "https://youtu.be/cJrOMnmq_U0",
+        description:
+          "Place the resistance band in both hands with your palms facing down. Slowly turn the palm of your affected arm over pulling against the resistance of the band. Control the pull of the band to slowly return to the start position.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/eagle-bands.jpg",
+        video: "https://youtu.be/hUcfxttGN3A",
+        description:
+          "In standing hold a resistance band in both hands behind your body. Slowly pull the band apart whilst rotating your hand out so that your palms end up facing forwards.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/wrist-supination.jpg",
+        video: "https://youtu.be/YsFNG9mbIrU",
+        description:
+          "Wrist supination - Grip a band between both hands with your palms facing down- slowly rotate the elbow of your affected arm out so that your palm ends up facing up",
+      },
+      {
+        image: "https://responsephysio.com/wp-content/uploads/2021/06/ear.jpg",
+        video: "https://youtu.be/TtaLBXVHVH8",
+        description:
+          "Bend your elbow to touch your chin, then touch your ear with your hand. Lift your arm straight up to the sky. Repeat this exercise several times.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    image:
+      "https://responsephysio.com/wp-content/uploads/2021/06/hand-and-wrist-image.jpg",
+    title: "HAND & WRIST PAIN EXERCISES",
 
+    subHeading:
+      "Have you been struggling with a hand or wrist injury, medical condition, repetitive strain or nerve pain? Try these gentle stretching and strengthening exercises to help ease the pain.",
+    exercisesDetails: "PHYSIOTHERAPY EXERCISES FOR WRIST AND HAND PAIN",
+    description:
+      "Looking for physio-approved gentle exercises to help painful wrists or hands? Regularly exercising and stretching your fingers, hands and wrists can help to build up the surrounding soft tissues that provide support. Keeping your wrists strong will alleviate your soreness, improve flexibility and reduce the likelihood of the pain returning.",
+    data: [
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/Pray-Stretch-website-image.jpg",
+        video: "https://youtu.be/cmmDu0S3rVs",
+        description:
+          "Pray Stretch - Put your hands together with your fingers pointing up. Bring your elbows out and pull your hands downwards holding this stretch.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/hand-wrist-pain.jpg",
+        video: "https://youtu.be/pJ2rqUgO-m4",
+        description:
+          "Wringing the towel- Inserting grip a small roll towel at the ends. Using your weaker wrist, twist the towel so that your wrist lifts, then slowly return to the starting position.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/reverse-wrist.jpg",
+        video: "https://youtu.be/MYTK8Canrzk",
+        description:
+          "Reverse prayer stretch - Place the backs of your hands together, slowly bring your forearms up and push your elbows down until you feel a stretch in your forearms. Hold this position",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/wrsit-pronation.jpg",
+        video: "https://youtu.be/taU6rbV_ejQ",
+        description:
+          "Wrist pronation - Hold a rolled-up towel in both hands with your palms facing up with your affected arm slowly twist the towel so that your palm is facing down. Then return to the starting position.",
+      },
+    ],
+  },
+  {
+    id: 5,
+    image:
+      "https://responsephysio.com/wp-content/uploads/2021/06/hip-exercise.jpg",
+    title: "HIP PAIN EXERCISES",
 
-module.exports = { medicinesData, exerciseData };
+    subHeading:
+      "If you are experiencing hip pain due to an injury, surgery, after exercise, or a medical condition, try these gentle stretching and strengthening exercises to help ease the pain.",
+    exercisesDetails: "PHYSIOTHERAPY EXERCISES FOR HIP PAIN",
+    description:
+      "Gentle exercises for knee pain are an excellent place to start to reduce knee pain. In just about every case of knee pain we see, there is substantial weakness in the surrounding muscles. Our exercises can help to build this muscle, ultimately reducing the stress on your knee and allowing your joint to move more easily.",
+    data: [
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/Hip-extension-website.jpg",
+        video: "https://youtu.be/Xv4pKoT-6Do",
+        description:
+          "Hip flexor/extension - In standing hold a chair or work surface for support. Lift your leg up towards the ceiling bending at the hip and knee to 90 degrees- pause here briefly then slowly lower. Next keeping your knee straight move your leg backwards. Clench your buttock and pause here briefly then slowly lower. Next, lift your leg sideways pause here briefly then slowly lower.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/05/response-step-lunge.jpg",
+        video: "https://youtu.be/VSE2vmTRo_A",
+        description:
+          "Lunge with step - In standing stand with one leg in front and the other leg on a small step behind you. Slowly bend your knees and lower your body towards the floor. Your front knee should remain over your foot and not track forwards.",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/Glue-stretch.jpg",
+        video: "https://youtu.be/KaBeAqRbh1E",
+        description:
+          "Glute stretch - In sitting place the foot of your affected leg on to the knee to the knee of your unaffected leg. With your hands gently pull your knee across your body then lean away and forwards to feel a stretch in your glute- hold this position.",
+      },
+    ],
+  },
+
+  {
+    id: 6,
+    image:
+      "https://responsephysio.com/wp-content/uploads/2021/06/knee-exercise.jpg",
+    title: "KNEE PAIN EXERCISES",
+    subHeading:
+      "If your knee pain is due to an injury, surgery, or arthritis, try these gentle stretching and strengthening exercises to help ease the pain.",
+    exercisesDetails: "PHYSIOTHERAPY EXERCISES FOR KNEE PAIN",
+    description:
+      "Gentle exercises for knee pain are an excellent place to start to reduce knee pain. In just about every case of knee pain we see, there is substantial weakness in the surrounding muscles. Our exercises can help to build this muscle, ultimately reducing the stress on your knee and allowing your joint to move more easily.",
+
+    data: [
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/leg-curl-website.jpg",
+        video: "https://youtu.be/0FDn8B7zTgM",
+        description:
+          "Leg curl - Lying on your front bend you knee to bring your heel closer to your buttock to activate your hamstrings. Pause here then slowly lower the leg back down",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/romanian-deadlift-website.jpg",
+        video: "https://youtu.be/UM7J2bYaz1w",
+        description:
+          "Stand up straight - with your feet should width apart. Holding a weight in your hands slowly lower the weight towards the floor with a slight bend at your knees until you feel a stretch within your hamstrings. Then drive your hips forward to stand up straight again",
+      },
+      {
+        image:
+          "https://responsephysio.com/wp-content/uploads/2021/06/Knee-exercise-Inner-quad-range.jpg",
+        video: "https://youtu.be/4c3WQaGF7zI",
+        description:
+          "Inner range quad - Place a foam roller or pillow underneath your knee. begin to straighten your knee and stop just before it is straight and hold this position for 3 seconds. Then fully straighten your knee and hold for a further 3 seconds before lowering it again.",
+      },
+    ],
+  },
+];
+
+module.exports = { medicinesData, exerciseData, exerciseDetailByIdData };
